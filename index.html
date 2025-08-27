@@ -1,37 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>In and Out Movers — Quote</title>
-  <link rel="stylesheet" href="styles.css"/>
-</head>
-<body>
-  <main class="section">
-    <div class="container">
-      <h1>Get a Free Quote</h1>
-      <input type="hidden" id="endpoint" value="https://script.google.com/macros/s/AKfycbwyojoFRS0AHQEmIsFtGEViefwM-1z7JCyN11BULFXi7ku-seBOTthukJMcKQg5eMzS/exec">
-      <form id="quote-form" class="quote-form">
-        <div class="row">
-          <input name="name" placeholder="Name" required>
-          <input name="email" type="email" placeholder="Email" required>
-        </div>
-        <div class="row">
-          <input name="phone" placeholder="Phone" value="+15085454939">
-          <input name="date" type="date" placeholder="Move date">
-        </div>
-        <div class="row">
-          <input name="from" placeholder="From (City, ZIP)">
-          <input name="to" placeholder="To (City, ZIP)">
-        </div>
-        <textarea name="details" rows="4" placeholder="Describe your move…"></textarea>
-        <button class="btn primary" type="submit">Send Request</button>
-      </form>
-      <p id="form-status" class="status" role="status" aria-live="polite"></p>
-      <p class="fineprint">If this works, a new row should appear in your Google Sheet and you’ll get an email notification.</p>
-      <p><a href="health.html">Open Health Check →</a></p>
-    </div>
-  </main>
-  <script src="script.js"></script>
-</body>
-</html>
+<!DOCTYPE html><html lang="en">
+<head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>In and Out Movers — Moving Made Easy</title><meta name="description" content="Fast moving services"/>
+<link rel="canonical" href="https://inandoutmovers.com"/>
+<link rel="stylesheet" href="styles.css"/><script async src="https://www.googletagmanager.com/gtag/js?id=G-SZS8HBEDQD"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-SZS8HBEDQD');</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"MovingCompany","name":"In and Out Movers","url":"https://inandoutmovers.com","email":"nickkadykov@gmail.com","telephone":"+15085454939","areaServed":"Boston MA and New England"}</script>
+</head><body><div class="nav"><div class="container">
+  <a href="index.html" class="brand ttl">In and Out Movers</a>
+  <a class="link" href="services.html">Services</a>
+  <a class="link" href="pricing.html">Pricing</a>
+  <a class="link" href="reviews.html">Reviews</a>
+  <a class="link" href="blog.html">Blog</a>
+  <a class="link" href="locations.html">Locations</a>
+  <a class="link" href="fleet.html">Fleet</a>
+  <a class="link" href="careers.html">Careers</a>
+  <a class="link" href="terms.html">Terms</a>
+  <a class="link" href="privacy.html">Privacy</a>
+  <div class="controls">
+    <a class="btn primary" href="pricing.html">Get a Quote</a>
+    <a class="btn" href="tel:+15085454939">Call Us</a>
+  </div>
+</div></div>
+<header class="hero"><div class="container"><h1>In and Out Movers</h1><p class="tag">Moving Made Easy</p></div></header>
+<main><section class="section"><div class="container">
+<p class="kicker">Fast, reliable and affordable moving in Boston & New England</p>
+<div class="grid">
+  <div class="card"><h3>Local Moving</h3><p>Apartments & homes within Greater Boston.</p><a href="local-moving.html">Learn more →</a></div>
+  <div class="card"><h3>Long Distance</h3><p>Inter‑state moves with flat‑rate pricing.</p><a href="long-distance.html">Learn more →</a></div>
+  <div class="card"><h3>Packing</h3><p>Full/partial packing with quality supplies.</p><a href="packing.html">Learn more →</a></div>
+  <div class="card"><h3>Storage</h3><p>Short/long term storage options.</p><a href="storage.html">Learn more →</a></div>
+  <div class="card"><h3>Commercial</h3><p>Office & retail relocations on your schedule.</p><a href="commercial.html">Learn more →</a></div>
+  <div class="card"><h3>Specialty Items</h3><p>Pianos, safes, art & fragile items.</p><a href="piano-specialty.html">Learn more →</a></div>
+</div></div></section>
+<section class="section alt"><div class="container"><h2>Why choose us</h2>
+<ul class="badges"><li>Licensed & Insured</li><li>Upfront Pricing</li><li>Careful Handling</li><li>Great Reviews</li></ul></div></section>
+<section class="section"><div class="container"><h2>Get a Free Quote</h2>
+<!-- Endpoint OUTSIDE the form -->
+<input type="hidden" id="endpoint" value="https://script.google.com/macros/s/AKfycbwyojoFRS0AHQEmIsFtGEViefwM-1z7JCyN11BULFXi7ku-seBOTthukJMcKQg5eMzS/exec">
+<form class="quote-form" id="quote-form">
+  <div class="row"><input name="name" placeholder="Name" required><input type="email" name="email" placeholder="Email" required></div>
+  <div class="row"><input name="phone" placeholder="Phone" value="+15085454939"><input type="date" name="date" placeholder="Move date" required></div>
+  <div class="row"><input name="from" placeholder="From (City, ZIP)" required><input name="to" placeholder="To (City, ZIP)" required></div>
+  <textarea name="details" rows="4" placeholder="Describe your move…"></textarea>
+  <button class="btn primary" type="submit">Send Request</button>
+  <p class="fineprint">By submitting, you agree to be contacted about your quote.</p>
+</form><p id="form-status" class="status" role="status" aria-live="polite"></p></div></section>
+<section class="section alt"><div class="container"><h2>Need help?</h2><p>Call us at <a href="tel:+15085454939">+15085454939</a> or email <a href="mailto:nickkadykov@gmail.com">nickkadykov@gmail.com</a>.</p></div></section></main>
+<footer class="footer"><div class="container"><p>© <span id="year"></span> In and Out Movers • <a href="tel:+15085454939">+15085454939</a> • <a href="mailto:nickkadykov@gmail.com">nickkadykov@gmail.com</a></p></div></footer>
+<script src="script.js"></script></body></html>
