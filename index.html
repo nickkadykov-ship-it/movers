@@ -42,12 +42,24 @@
 <section class="section alt"><div class="container"><h2>Why choose us</h2>
 <ul class="badges"><li>Licensed & Insured</li><li>Upfront Pricing</li><li>Careful Handling</li><li>Great Reviews</li></ul></div></section>
 <section class="section"><div class="container"><h2>Get a Free Quote</h2>
+  <!-- ДО формы, ВНЕ её -->
+<input type="hidden" id="endpoint" value="https://script.google.com/macros/s/https://script.google.com/macros/s/AKfycbwyojoFRS0AHQEmIsFtGEViefwM-1z7JCyN11BULFXi7ku-seBOTthukJMcKQg5eMzS/exec/exec">
+<form id="quote-form">
+  <input name="name" placeholder="Name" required>
+  <input name="email" type="email" placeholder="Email" required>
+  <input name="phone" placeholder="Phone">
+  <input name="date" type="date">
+  <input name="from" placeholder="From">
+  <input name="to" placeholder="To">
+  <textarea name="details" placeholder="Details"></textarea>
+  <button type="submit">Send</button>
+</form>
+<p id="form-status"></p>
 <form class="quote-form" id="quote-form">
   <div class="row"><input name="name" placeholder="Name" required><input type="email" name="email" placeholder="Email" required></div>
   <div class="row"><input name="phone" placeholder="Phone" value="+15085454939"><input type="date" name="date" placeholder="Move date" required></div>
   <div class="row"><input name="from" placeholder="From (City, ZIP)" required><input name="to" placeholder="To (City, ZIP)" required></div>
   <textarea name="details" rows="4" placeholder="Describe your move…"></textarea>
-  <input type="hidden" name="_endpoint" value="https://script.google.com/macros/s/AKfycbwyojoFRS0AHQEmIsFtGEViefwM-1z7JCyN11BULFXi7ku-seBOTthukJMcKQg5eMzS/exec">
   <button class="btn primary" type="submit">Send Request</button>
   <p class="fineprint">By submitting, you agree to be contacted about your quote.</p>
 </form><p id="form-status" class="status" role="status" aria-live="polite"></p></div></section></main>
