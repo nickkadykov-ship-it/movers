@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"><title>Health check</title>
+<link rel="stylesheet" href="styles.css"></head>
+<body><div class="container">
+<h1>Apps Script Health Check</h1>
+<p>This page sends a test POST to your GAS endpoint and shows the raw response.</p>
+<label>Endpoint URL</label>
+<input id="endpoint" value='https://script.google.com/macros/s/AKfycbwyojoFRS0AHQEmIsFtGEViefwM-1z7JCyN11BULFXi7ku-seBOTthukJMcKQg5eMzS/exec'>
+<button class="btn primary" id="run">Send test</button>
+<pre id="out"></pre>
+<script>
+document.getElementById('run').onclick = async () => {
+  const url = document.getElementById('endpoint').value;
+  const body = new URLSearchParams({name:'Health Test', email:'debug@example.com', phone:'123', date:'2025-12-12', from:'A', to:'B', details:'Ping'});
+  const out = document.getElementById('out');
+  out.textContent = 'Requesting…';
+  try{
+    const res = await fetch(url, {method:'POST', headers:{'Accept':'application/json','Content-Type':'application/x-www-form-urlencoded'}, body});
+    const text = await res.text();
+    out.textContent = 'HTTP '+res.status+'\n'+text;
+  }catch(err){
+    out.textContent = 'Failed: '+String(err);
+  }
+};
+</script>
+</div></body></html>
